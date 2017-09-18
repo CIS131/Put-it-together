@@ -11,38 +11,29 @@
 	    <link rel="stylesheet" href="Styles/indexStyles.css">
     </head>
     <body>
-       <!------------------
-               NavBar
-        ------------------->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-main">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pages/Galaxies.html">Galaxies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pages/indexfrequencies.html">Sounds/Frequencies</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="Pages/planets.html">Our Planets</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="Pages/computers.html">Computers in Space</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-md navbar-toggleable-md navbar-dark bg-dark">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Space Project</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/planets.html">Solar System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/indexfrequencies.html">Sounds/Frequencies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/computers.html">Computers in Space</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
        <!------------------
            Cover Picture
         ------------------->
@@ -61,7 +52,7 @@
                                 <label for="sr-only">EMail</label>
                                 <input type="text" id="emailinput" class="form-control form-control-lg" placeholder="you@example.com">
                             </div>
-                            <input type="button" id="submit" class="btn btn-success btn-md" value="Submit"/>  
+                            <input type="button" id="submit" class="btn btn-success btn-md" value="Submit"/>
                         </form>
                        <br />
                        <p>Enter your information to recieve weekly news letters and events</p>
@@ -70,7 +61,7 @@
                 </div>
             </div>
         </div>
-       
+
         <!------------------
           Bootstrap layout
         ------------------->
@@ -78,7 +69,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="kids">
-                        <h4>Cool Stuff for Kids</h4> 
+                        <h4>Cool Stuff for Kids</h4>
                         <p><a href="https://www.nasa.gov/kidsclub/index.html">Nasa Kids Club</a></p>
                         <p><a href="http://school.discoveryeducation.com/schooladventures/spacestation/">Build the International Space Station</a></p>
                         <p><a href="http://amazingspace.org/">Amazing Space</a></p>
@@ -108,7 +99,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="theories">
-                        <h4>Theories</h4> 
+                        <h4>Theories</h4>
                         <p><a href="http://www.hawking.org.uk/the-origin-of-the-universe.html">Big Bang Theory</a></p>
                         <p><a href="http://superstringtheory.com/">String Theory</a></p>
                         <p><a href="http://www.pbs.org/wgbh/nova/blogs/physics/2015/05/a-new-way-to-detect-bubble-universe-collisions/">Bubble Theory</a></p>
@@ -134,9 +125,11 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <p>&copy; Company 2017</p>
-        </footer>
+        <div class="container-fluid text-center" style="background-color: #343A40; color: ivory; padding-top: 30px; padding-bottom: 20px;">
+          <footer>
+            <h6>Proudly Designed &amp; Coded By: Steven Golden, Matthew Glenn, Michael Ganschow &amp; Brian Hayes.</h6>
+          </footer>
+        </div>
 	    <!-- jQuery first, Bootstrap JS. -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/jk/bootstrap.min.js"></script>
