@@ -10,10 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Solar System</title>
 
     <!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Orbitron|Permanent+Marker" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,13 +26,40 @@
 			padding-top: 70px;
 			padding-bottom: 70px;
 		}
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
 	</style>
   </head>
   <body style="background-color: black;">
-    <div class="container-fluid text-center">
-			<h1 style="color: ivory; font-size:500%;">Our Solar System</h1>
-			<img src="images/solar_system.jpg" class="img" alt="Solar System" usemap="#planetmap">
-			<map name="planetmap">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-toggleable-md navbar-dark bg-dark">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Space Project</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planets.html">Solar System</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="indexfrequencies.html">Sounds/Frequencies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="computers.html">Computers in Space</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Article Body -->
+<div class="container-fluid text-center">
+			<h1 style="color: ivory; font-size:500%; padding-top: 60px;">Solar System</h1>
+			<img src="../Pictures/solar_system_C.jpg" class="img-fluid" alt="Solar System" usemap="#planetmap">
+		<!--	<map name="planetmap">
 			  <area shape="circle" coords="825,580,12" href="#mercury" alt="Mercury">
 			  <area shape="circle" coords="898,583,42" href="#venus" alt="Venus">
 			  <area shape="circle" coords="995,583,33" href="#earth" alt="Earth">
@@ -41,39 +69,9 @@
 			  <area shape="circle" coords="1591,596,31" href="#uranus" alt="Uranus">
 			  <area shape="circle" coords="1685,596,41" href="#neptune" alt="Neptune">
 			</map>
-	</div>
-	<!-- Navbar -->
-	       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-main">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galaxies.html">Galaxies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="frequencies.html">Sounds/Frequencies</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="planets.html">Our Planets</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="computers.html">Computers in Space</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-					<p><font color="White">We would like to know what your favorite planet is, Press go to answer &nbsp; &nbsp;   </font></p>
-					<input type="button" id="go" class="btn btn-success btn-md" value="GO"/>
-                </form>
-            </div>
-        </nav>
-	<!-- Article Body -->
-	<div class="container text-center padding-planets">
+	</div> -->
+  <!-- How much would you weigh? -->
+  <div class="container-fluid text-center padding-planets" style="background-color: #343A40">
 		<h2 style="color: ivory;">How much would you weigh on another planet?</h2>
 		<span style="color: ivory;">Select your planet: </span>
 		<select id="planet" name="planet">
@@ -87,14 +85,15 @@
 			<option value="1.19">Neptune</option>
 			<option value="0.06">Pluto</option>
 		</select>
-		<span style="color: ivory;">How much do you weigh? </span><input type="text" id="weight" name="weight" placeholder="weight in lbs"></input>
+		<span style="color: ivory;">Press calculate to enter your weight</span>
 		<input id="weightButton" type="button" value="Calculate" />
 		<p id="spaceWeight" style="color: ivory;"></p>
 	</div>
-	<div class="container">
+  <!-- Planet Info -->
+
 		<div class="row  padding-planets" id="mercury">
 			<div class="col-md-6">
-				<img src="../Pictures/mercury.jpg" class="img-responsive" style="width:100%" alt="Mercury">
+				<img src="../Pictures/mercury.jpg" class="img-responsive" style="max-width: 400px;" alt="Mercury">
 			</div>
 			<div class="col-md-6">
 				<h2 style="color: ivory;">Mercury</h2>
@@ -123,12 +122,12 @@
 				</p>
 			</div>
 			<div class="col-md-6">
-				<img src="../Pictures/venus.jpg" class="img-responsive" style="width:100%" alt="Venus">
+				<img src="../Pictures/venus.jpg" class="img-responsive" style="max-width: 400px;" alt="Venus">
 			</div>
 		</div>
 		<div class="row  padding-planets" id="earth">
 			<div class="col-md-6">
-				<img src="../Pictures/earth.png" class="img-responsive" style="width:100%" alt="Earth">
+				<img src="../Pictures/earth.png" class="img-responsive" style="max-width: 400px;" alt="Earth">
 			</div>
 			<div class="col-md-6">
 				<h2 style="color: ivory;">Earth</h2>
@@ -142,13 +141,20 @@
 				</p>
 			</div>
 		</div>
+    <!-- Favorite Planet -->
+    <div class="container-fluid text-center" style="background-color: #343A40; padding-top: 25px; padding-bottom: 25px;">
+      <form class="form-inline my-2 my-lg-0 text-center justify-content-center">
+        <h4><font color="ivory">What's your favorite planet? To let us know press the go button! &nbsp; &nbsp;</font></h4>
+        <input type="button" id="go" class="btn btn-success btn-md" value="GO"/>
+      </form>
+    </div>
 		<div class="row  padding-planets" id="mars">
 			<div class="col-md-6">
 				<h2 style="color: ivory;">Mars</h2>
 				<p style="color: ivory;">Equatorial Diameter:	6,792 km<br>
 					Polar Diameter:	6,752 km<br>
 					Mass:	6.42 x 10^23 kg (10.7% Earth)<br>
-					Moons:	2 (Phobos & Deimos)<br>
+					Moons:	2 (Phobos &amp; Deimos)<br>
 					Orbit Distance:	227,943,824 km (1.52 AU)<br>
 					Orbit Period:	687 days (1.9 years)<br>
 					Surface Temperature:	-153 to 20 °C<br>
@@ -157,19 +163,19 @@
 				</p>
 			</div>
 			<div class="col-md-6">
-				<img src="../Pictures/Mars.jpg" class="img-responsive" style="width:100%" alt="Mars">
+				<img src="../Pictures/Mars.jpg" class="img-responsive" style="max-width: 400px;" alt="Mars">
 			</div>
 		</div>
 		<div class="row  padding-planets" id="jupiter">
 			<div class="col-md-6">
-				<img src="../Pictures/jupiter.jpg" class="img-responsive" style="width:100%" alt="Jupiter">
+				<img src="../Pictures/jupiter.jpg" class="img-responsive" style="max-width: 400px;" alt="Jupiter">
 			</div>
 			<div class="col-md-6">
 				<h2 style="color: ivory;">Jupiter</h2>
 				<p style="color: ivory;">Equatorial Diameter:	142,984 km<br>
 					Polar Diameter:	133,709 km<br>
 					Mass:	1.90 × 10^27 kg (318 Earths)<br>
-					Moons:	67 (Io, Europa, Ganymede & Callisto)<br>
+					Moons:	67 (Io, Europa, Ganymede &amp; Callisto)<br>
 					Rings:	4<br>
 					Orbit Distance:	778,340,821 km (5.20 AU)<br>
 					Orbit Period:	4,333 days (11.9 years)<br>
@@ -186,7 +192,7 @@
 				<p style="color: ivory;">Equatorial Diameter:	120,536 km<br>
 					Polar Diameter:	108,728 km<br>
 					Mass:	5.68 × 10^26 kg (95 Earths)<br>
-					Moons:	62 (Titan, Enceladus, Iapetus & Rhea)<br>
+					Moons:	62 (Titan, Enceladus, Iapetus &amp; Rhea)<br>
 					Rings:	30+ (7 Groups)<br>
 					Orbit Distance:	1,426,666,422 km (9.54 AU)<br>
 					Orbit Period:	10,756 days (29.5 years)<br>
@@ -196,19 +202,19 @@
 				</p>
 			</div>
 			<div class="col-md-6">
-				<img src="../Pictures/saturn.jpg" class="img-responsive" style="width:100%" alt="Saturn">
+				<img src="../Pictures/saturn.jpg" class="img-responsive" style="max-width: 400px;" alt="Saturn">
 			</div>
 		</div>
 		<div class="row  padding-planets" id="uranus">
 			<div class="col-md-6">
-				<img src="../Pictures/uranus.jpg" class="img-responsive" style="width:100%" alt="Uranus">
+				<img src="../Pictures/uranus.jpg" class="img-responsive" style="max-width: 400px;" alt="Uranus">
 			</div>
 			<div class="col-md-6">
 				<h2 style="color: ivory;">Uranus</h2>
 				<p style="color: ivory;">Equatorial Diameter:	51,118 km<br>
 					Polar Diameter:	49,946 km<br>
 					Mass:	8.68 × 10^25 kg (15 Earths)<br>
-					Moons:	27 (Miranda, Titania, Ariel, Umbriel & Oberon)<br>
+					Moons:	27 (Miranda, Titania, Ariel, Umbriel &amp; Oberon)<br>
 					Rings:	13<br>
 					Orbit Distance:	2,870,658,186 km (19.19 AU)<br>
 					Orbit Period:	30,687 days (84.0 years)<br>
@@ -230,18 +236,25 @@
 					Orbit Period:	60,190 days (164.8 years)<br>
 					Effective Temperature:	-214 °C<br>
 					Discovery Date:	September 23rd 1846<br>
-					Discovered By:	Urbain Le Verrier & Johann Galle<br>
+					Discovered By:	Urbain Le Verrier &amp; Johann Galle<br>
 				</p>
 			</div>
 			<div class="col-md-6">
-				<img src="../Pictures/neptune.jpg" class="img-responsive" style="width:100%" alt="Neptune">
+				<img src="../Pictures/neptune.jpg" class="img-responsive" style="max-width: 400px;" alt="Neptune">
 			</div>
 		</div>
-	</div>
+    <div class="container-fluid text-center" style="background-color: #343A40; color: ivory; padding-top: 30px; padding-bottom: 20px;">
+      <footer>
+        <h6>Proudly Designed &amp; Coded By: Steven Golden, Matthew Glenn, Michael Ganschow &amp; Brian Hayes.</h6>
+      </footer>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<!-- favorite planet array -->
 	<script type="text/javascript">
 		function answerQuestion() {
@@ -257,14 +270,14 @@
 	<!-- loop for weight on different planet-->
 	<script>
 		function planetWeight() {
-			var planet = document.getElementById("planet").value * 1;
-			var weight = document.getElementById("weight") * 1;
-			var spaceWeight = 0;
+			var eWeight = new Array();
+			var aPlanet = document.getElementById("planet").value;
 
-			while (weight > 0) {
-				spaceWeight = weight * planet;
-			}
-			document.getElementById("spaceWeight").innerHTML = ("Your weight would be: " + spaceWeight + "lbs.");
+				for(i=0;i<1;i++) {
+				eWeight[i] = prompt("Please enter your weight",  " ") * 100;
+				}
+
+			document.write = alert("Your weight would be: " + (eWeight[0] * aPlanet) / 100 + "lbs.");
 		}
 		document.getElementById("weightButton").addEventListener("click", planetWeight, false);
 
