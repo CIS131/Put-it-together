@@ -46,11 +46,34 @@
 	  font-family: 'Orbitron', sans-serif;
 		 font-size:8px ;
 	 }
+	 .mission-complete  
+	 {
+	  text-align: center;
+	  font-size: 60px;
+	  color:gold;
+     }
 		</style>
     </head>
     <body> // I should have been doing this along time ago... Here are my walkthrough comments for my changes
-<script>	   
-	    // This will set the date we're counting down to:
+	
+       <!------------------
+           Cover Picture
+        ------------------->
+        <div class="cover">
+            <div class="cover-caption">
+                <div class="container">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <h1 class="display-3">Frequencies &amp; Sounds</h1>
+                        
+                       <a href="#nav-main" class="btn btn-secondary-outline brn-sm role="button>&darr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+<p id="mission-complete"></p>
+	<script>
+		// This will set the date we're counting down to:
 var countDownDate = new Date("Dec 11, 2017 15:37:25").getTime();
 
 // This will update my count down every 1 second
@@ -78,23 +101,7 @@ var x = setInterval(function() {
         document.getElementById("mission-complete").innerHTML = "Mission Complete!!";
     }
 }, 1000);
-	    </script>
-       <!------------------
-           Cover Picture
-        ------------------->
-        <div class="cover">
-            <div class="cover-caption">
-                <div class="container">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h1 class="display-3">Frequencies &amp; Sounds</h1>
-                        
-                       <a href="#nav-main" class="btn btn-secondary-outline brn-sm role="button>&darr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-		
-
+	</script>
 <script>
 function myFunction() {
     alert( "I think we need some Space!");
