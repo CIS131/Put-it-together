@@ -1,0 +1,24 @@
+
+
+body {
+    background: black;
+    
+}
+
+.jumbotron	{
+	background-image: url("../Pictures/GalJTBackground.jpg");
+	color: white;
+	text-align: center
+}
+.formation, .observatories {
+	height: 450px;
+	
+}
+.formation {
+background-image: url("../Pictures/howform.jpg");
+background-repeat: no-repeat;
+}
+.observatories {
+	background-image: url("../Pictures/observatory.jpg");
+	background-repeat: no-repeat;
+}

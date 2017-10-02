@@ -1,0 +1,81 @@
+
+/* cover */
+html, body {
+    height: 100%;
+}
+.cover {
+    background: url("../Pictures/space2.jpg") no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 10px white;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cover-caption {
+    width: 100%;
+}
+
+/* container */
+body {
+    background: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h4 {
+    text-shadow: 0 0 5px darkmagenta;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    color: White;
+}
+
+
+.computer, .exploration, .video, .computers, .adspace {
+    height: 300px;
+    border: 2px solid grey;
+    border-style: outset;
+}
+
+.video {
+    margin-top: 10px;
+}
+
+.computer {
+    background: url("../Pictures/mac.jpg") no-repeat;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px navy;
+}
+
+.info {
+    background: black;
+    margin-top: 10px;
+}
+
+.exploration {
+    box-shadow: -2px 2px 10px grey;
+    background: url("../Pictures/rover.jpg") no-repeat;
+    background-size: cover;
+}
+
+.computers {
+    box-shadow: 2px -2px 12px grey;
+    background: url("../Pictures/space01.jpg") no-repeat;
+    background-size: cover;
+}
+
+.adspace {
+	background: url("../Pictures/gps.png") no-repeat;
+    margin-top: 10px;
+    box-shadow: -2px -2px 10px grey;
+}
+
+.quote {
+    text-shadow: 0 0 5px blue;
+    font-size: 24px;
+    color: grey;
+    
+}
